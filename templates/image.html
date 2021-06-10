@@ -1,0 +1,32 @@
+<!--Base.html wordt als base gebruikt-->
+{% extends "base.html" %}
+<!--Titel uniek voor deze webpagina-->
+{% block title %}Biosearch {% endblock %}
+<!--Content uniek voor deze webpagina-->
+{% block content %}
+     <!--Een header met knoppen om naar de Home webpagine en de Top 10 webpagina te gaan-->
+    <header><h1> <a href="/" class="button">Home</a>
+                 <a href="image.html" class="button">Top 10 </a>
+        </h1><b>Deze webpagina toont het aantal em de verhouding van de top 10 organismen die het meest waarschijnlijk
+        in de compost voorkomen</b></header>
+        <hr>
+    <!--Linkerdeel van de body waar wat extra informatie staat-->
+    <nav>
+        <p style="color:blueviolet"> Hiernaast is een cirkeldiagram en een staafdiagram te zien met de top 10 meest
+            voorkomende organismen in de database</p>
+    </nav>
+    <!--Rechterdeel van de body waar de figuren staan met onderschrift-->
+    <section>
+        <div class="row">
+            <div class="column">
+                <img src="static/piechart.png" style="width:100%">
+                <h3>Fig 1. Cirkeldiagram met de verhoudingen van de top 10 meest voorkomende organismen:</h3>
+            </div>
+            <div class="column">
+                <img src="static/barplot.png" style="width:100%">
+                <h3>Fig 2. Staafdiagram met de frequenties van de top 10 meest voorkomende organismen: </h3>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <!--Base.html is gelink aan een css zodat de html's van de websitepagina's gebruikmaken van (grotendeels)
+    dezelfde opmaak-->
+    <link rel="stylesheet" href="static/style_website.css">
+    <!--Base.html is gelinkt aan een flavicon zodat alle webpagina's een flavicon bevatten-->
+    <link rel='icon' href='{{ url_for('static', filename='favicon_web.ico') }}' type='image/x-icon'/>
+</head>
+<!--De body is volledig gebasseerd op wat er op de website htmls staat. Daarom is het in de base leeg-->
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>
