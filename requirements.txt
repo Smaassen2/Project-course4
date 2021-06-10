@@ -7,6 +7,6 @@ Flask==2.0.0
 Jinja2>==3.0.1
 mysql-connector-python==8.0.25
 biopython==1.78
-Re==20.1.1
+Re==2021.4.4
 Matplotlib==3.4.2
 
