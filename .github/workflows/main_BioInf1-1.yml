@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'BioInf1-1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_67bd7ae12d1b459ab5d28b647bf5632c }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bb6fd87fa2554077afebd9068ad9bdf4 }}
